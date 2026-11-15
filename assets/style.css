@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --navy: #142b3c;
+    --navy-light: #1c4053;
+    --teal: #17a897;
+    --teal-light: #e5f7f4;
+    --purple: #7766c6;
+    --background: #f4f7fa;
+    --white: #ffffff;
+    --muted: #82909c;
+    --border: #e6edf1;
+    --text: #233747;
+}
+
+html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.stApp {
+    background: var(--background);
+    color: var(--text);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stSidebar"] {
+    background: #ffffff;
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    padding-top: 1.5rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 4px 18px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #17a897, #277b9d);
+    color: white;
+    border-radius: 14px;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.brand h2 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--navy);
+    font-size: 18px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.brand p {
+    font-size: 10px;
+    color: var(--muted);
+    margin: 3px 0 0;
+}
+
+.sidebar-status {
+    background: #f0f8f7;
+    border: 1px solid #d9eeea;
+    padding: 13px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 2;
+}
+
+.sidebar-status small {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #20b58b;
+    margin-right: 7px;
+}
+
+.hero {
+    padding: 48px 45px;
+    border-radius: 24px;
+    background: linear-gradient(115deg, #142b3c 0%, #1d5261 65%, #167f80 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.hero::after {
+    content: "+";
+    position: absolute;
+    right: 65px;
+    top: -85px;
+    font-size: 300px;
+    font-weight: 200;
+    color: rgba(255,255,255,0.07);
+}
+
+.hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    color: #a9eee0;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.16;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    color: #d1e5e9;
+    font-size: 15px;
+    max-width: 590px;
+    line-height: 1.7;
+}
+
+.section-header {
+    margin: 12px 0 24px;
+}
+
+.section-header h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 5px;
+}
+
+.section-header p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.metric-card {
+    background: white;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    min-height: 145px;
+    box-shadow: 0 4px 15px rgba(22, 47, 63, 0.035);
+    margin-bottom: 15px;
+}
+
+.metric-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.metric-icon {
+    font-size: 20px;
+}
+
+.metric-card h2 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--navy);
+    font-size: 28px;
+    font-weight: 800;
+    margin: 13px 0 3px;
+}
+
+.metric-card p {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 0;
+}
+
+.feature-card, .about-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    min-height: 165px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 15px rgba(22, 47, 63, 0.035);
+}
+
+.feature-icon {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3, .about-card h3 {
+    font-family: 'Manrope', sans-serif;
+    color: var(--navy);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.feature-card p, .about-card p {
+    color: #71818d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.workflow {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.workflow-step {
+    padding: 18px;
+    background: #f6fafb;
+    border: 1px solid #e7eff1;
+    border-radius: 12px;
+}
+
+.workflow-step strong {
+    color: var(--teal);
+    font-size: 12px;
+}
+
+.workflow-step h4 {
+    color: var(--navy);
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.workflow-step p {
+    color: var(--muted);
+    font-size: 12px;
+    margin: 0;
+}
+
+.workflow-arrow {
+    text-align: center;
+    color: var(--teal);
+    font-size: 23px;
+    padding: 4px;
+}
+
+.stButton > button {
+    border-radius: 10px;
+    border: 1px solid #dce8e9;
+    background: white;
+    color: var(--navy);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: #f0faf8;
+}
+
+.stChatInput {
+    border-radius: 15px;
+}
+
+[data-testid="stChatMessage"] {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+[data-testid="stExpander"] {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.stProgress > div > div {
+    background: var(--teal);
+}
+
+.stAlert {
+    border-radius: 12px;
+}
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid var(--border);
+    margin-top: 55px;
+    padding: 22px 0;
+}
+
+.footer p {
+    color: var(--navy);
+    font-weight: 800;
+    margin: 0;
+}
+
+.footer span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 22px;
+    }
+
+    .hero::after {
+        display: none;
+    }
+
+    .section-header h2 {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,6 @@
+query_id,question,answer_text,relevance,faithfulness,completeness,citation_correctness,medical_safety,notes
+Q1,What are the symptoms of sideroblastic anemia?,,5,4,4,4,4,Good answer; avoid universal symptom claims
+Q2,What causes high blood pressure?,,5,4,3,4,4,Answer appeared truncated
+Q3,What are the symptoms of asthma?,,5,4,5,4,5,Good symptom coverage and safety caution
+Q4,What are the symptoms of X-linked sideroblastic anemia?,,5,4,4,4,4,Good subtype distinction; avoid universal claims
+Q5,How does a computer processor work?,,5,5,5,5,5,Correct refusal of unrelated question

@@ -1,0 +1,32 @@
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# API keys and secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Ignore raw and unnecessary datasets
+data/raw/*
+
+# Keep the dataset required by the chatbot
+data/processed/*
+!data/processed/medquad_chunks.csv
+
+# Keep the FAISS index required by the chatbot
+models/*
+!models/medquad_faiss.index
+
+# Evaluation temporary results
+evaluation/results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

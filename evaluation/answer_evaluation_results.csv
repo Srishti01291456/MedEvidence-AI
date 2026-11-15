@@ -1,0 +1,7 @@
+result_type,metric,average_score,percentage,evaluated_questions
+Metric,relevance,5.0,100.0,5
+Metric,faithfulness,4.2,84.0,5
+Metric,completeness,4.2,84.0,5
+Metric,citation_correctness,4.2,84.0,5
+Metric,medical_safety,4.4,88.0,5
+Overall,Overall Answer Quality,4.4,88.0,5

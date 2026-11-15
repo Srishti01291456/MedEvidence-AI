@@ -1,0 +1,6 @@
+query,candidate_recall@10,dense_precision@5,reranker_precision@5,dense_recall@5,reranker_recall@5,dense_mrr,reranker_mrr,dense_hit_rate@5,reranker_hit_rate@5
+What are the symptoms of Permanent neonatal diabetes mellitus?,0.75,0.6,0.4,0.75,0.5,1.0,1.0,1,1
+What causes High Blood Pressure?,1.0,1.0,1.0,0.7142857142857143,0.7142857142857143,1.0,1.0,1,1
+What are the symptoms of Asthma?,0.4,0.2,0.4,0.2,0.4,1.0,1.0,1,1
+What are the symptoms of Sideroblastic anemia?,1.0,0.2,0.2,1.0,1.0,1.0,0.2,1,1
+What are the symptoms of Basilar migraine?,1.0,0.8,0.6,1.0,0.75,1.0,1.0,1,1

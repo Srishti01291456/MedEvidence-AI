@@ -1,0 +1,5 @@
+method,precision@5,recall@5,mrr,hit_rate@5
+BM25,0.44,0.6043,0.64,1.0
+Dense,0.56,0.7329,1.0,1.0
+Hybrid,0.52,0.6829,1.0,1.0
+TF-IDF,0.44,0.6157,0.9,1.0
